@@ -1,9 +1,10 @@
 from random import*
 
 a = ["pierre", "feuille", "ciseaux"]
-aide = "regle"
+aide = "aide"
 score = 0
-for i in range(4):
+q = True
+while q:
     print(" ")
     d = input("Pierre, feuille, ciseaux : ")
     print(" ")
@@ -27,5 +28,8 @@ for i in range(4):
         print("La pierre bat les ciseaux et perd contre la feuille.")
         print("La feuille bat la pierre et perd contre les ciseaux.")
         print("Les ciseaux battent la feuille et perd contre la pierre.")
+        print('Taper "stop" pour arreter le jeu')
+    elif d == "stop":
+        q = False
     else:
         print("invalid input")
