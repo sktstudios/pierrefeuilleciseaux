@@ -5,7 +5,8 @@
     font-family: sans-serif;
 }
 body{
-    background-image: url(https://picsum.photos/1920/1080);
+    background-image: url("back1.png");
+    background-size: auto;
 }
 h1 {
     color: white;
@@ -94,6 +95,9 @@ ul {
     margin-right: 0px;
 }
 @media (max-width: 991px) {
+    body {
+        background-size: auto;
+    }
     h2 {
         font-size: 40px;
         margin-top: 50px;
