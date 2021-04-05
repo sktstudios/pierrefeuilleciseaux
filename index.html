@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" >
+<meta name="description" content="Rock Paper Scissors - versus a totally random AI " />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="keywords" content="rock paper scissors, rock, paper, scissors, game, fun, funny, online, AI" />
+<title>Rock Paper Scissors</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="#.png"/>
+</head>
+    <body>
+        <h1>Rock Paper Scissors</h1>
+        <h2 id="demo" >Let's Go !</h2>
+        <div class="container">
+            <div class="section">
+                <div class="info" >
+                    <div class="carre"></div>
+                    <h3>Player Score : </h3>
+                    <span id="scorep">0</span>
+                </div>
+                <div class="show">
+                    <img id="user" src="" >
+                </div>
+            </div>
+            <div class="section">
+                <div class="info" >
+                    <div class="carre"></div>
+                    <h3>AI Score : </h3>
+                    <span id="scoreai">0</span></div>
+        
+                <div class="show">
+                    <img id="ai" src="" >
+                </div>
+            </div>
+        </div>
+        <ul>
+            <input type="image" id="pierre" onclick="fun1()" class="pierre" src="stone.png" >
+            <input type="image" id="feuille" onclick="fun2()" class="feuille" src="paper.png" >
+            <input type="image" id="ciseaux" onclick="fun3()" class="ciseaux" src="scissors.png" >
+        </ul>
+    <script type="text/javascript" >
+      var scorep = 0;
+      var scoreai = 0;
+      var img1 = document.getElementById("ai");
+      img1.setAttribute("style", "width: 100px;");
+      var img11 = document.getElementById("user");
+      img11.setAttribute("style", "width: 100px;");
+      var img2 = document.getElementById("ai");
+      img2.setAttribute("style", "width: 100px;");
+      var img22 = document.getElementById("user");
+      img22.setAttribute("style", "width: 100px;");
+      var img3 = document.getElementById("ai");
+      img3.setAttribute("style", "width: 100px;");
+      var img33 = document.getElementById("user");
+      img33.setAttribute("style", "width: 100px;");
+        function fun1() {
+          var arr = ["pierre", "feuille", "ciseaux"];
+          
+          var i = arr[Math.floor(Math.random() * arr.length)];
+          if (i == arr[0]) {
+              document.getElementById('ai').setAttribute("src", "stone.png");
+              document.getElementById('user').setAttribute("src", "stone.png");
+              document.getElementById('demo').innerHTML = ("Tie !");
+          } else if (i == arr[1]) {
+              document.getElementById('ai').setAttribute("src", "paper.png");
+              document.getElementById('user').setAttribute("src", "stone.png");
+              document.getElementById('demo').innerHTML = ("Loose !");
+              ++scoreai; document.getElementById('scoreai').innerHTML = scoreai;
+          } else if (i == arr[2]) {
+               document.getElementById('ai').setAttribute("src", "scissors.png");
+              document.getElementById('user').setAttribute("src", "stone.png");
+              document.getElementById('demo').innerHTML = ("Win !");
+             ++scorep; document.getElementById('scorep').innerHTML = scorep;
+          }
+      }
+    </script>
+    <script type="text/javascript" >
+        function fun2() {
+          var arr = ["pierre", "feuille", "ciseaux"];
+          
+          var i = arr[Math.floor(Math.random() * arr.length)];
+          if (i == arr[1]) {
+              document.getElementById('ai').setAttribute ("src", "paper.png");
+              document.getElementById('user').setAttribute("src", "paper.png");
+              document.getElementById('demo').innerHTML = ("Tie !");
+          } else if (i == arr[2]) {
+              document.getElementById('ai').setAttribute("src", "scissors.png");
+              document.getElementById('user').setAttribute("src", "paper.png");
+              document.getElementById('demo').innerHTML = ("Loose !");
+              ++scoreai; document.getElementById('scoreai').innerHTML = scoreai;
+          } else if (i == arr[0]) {
+              document.getElementById('ai').setAttribute("src", "stone.png");
+              document.getElementById('user').setAttribute("src", "paper.png");
+              document.getElementById('demo').innerHTML = ("Win !");
+             ++scorep; document.getElementById('scorep').innerHTML = scorep;
+          }
+      }
+    </script>
+    <script type="text/javascript" >
+        function fun3() {
+          var arr = ["pierre", "feuille", "ciseaux"];
+          
+          var i = arr[Math.floor(Math.random() * arr.length)];
+          if (i == arr[2]) {
+              document.getElementById('ai').setAttribute("src", "scissors.png");
+              document.getElementById('user').setAttribute("src", "scissors.png");
+              document.getElementById('demo').innerHTML = ("Tie !");
+          } else if (i == arr[0]) {
+              document.getElementById('ai').setAttribute("src", "stone.png");
+              document.getElementById('user').setAttribute("src", "scissors.png");
+              document.getElementById('demo').innerHTML = ("Loose !");
+              ++scoreai; document.getElementById('scoreai').innerHTML = scoreai;
+          } else if (i == arr[1]) {
+              document.getElementById('ai').setAttribute("src", "paper.png");
+              document.getElementById('user').setAttribute("src", "scissors.png");
+              document.getElementById('demo').innerHTML = ("Win !");
+             ++scorep; document.getElementById('scorep').innerHTML = scorep;
+          }
+      }
+    </script>
+    </body>
+</html>
