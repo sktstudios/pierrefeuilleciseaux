@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-61FW43P1P7"></script>
 <script>
@@ -68,16 +68,22 @@
           var i = arr[Math.floor(Math.random() * arr.length)];
           if (i == arr[0]) {
               document.getElementById('ai').setAttribute("src", "stone.png");
+              document.getElementById('ai').setAttribute("alt", "stone");
               document.getElementById('user').setAttribute("src", "stone.png");
+              document.getElementById('user').setAttribute("alt", "stone");
               document.getElementById('demo').innerHTML = ("Tie !");
           } else if (i == arr[1]) {
               document.getElementById('ai').setAttribute("src", "paper.png");
+              document.getElementById('ai').setAttribute("alt", "paper");
               document.getElementById('user').setAttribute("src", "stone.png");
+              document.getElementById('user').setAttribute("alt", "stone");
               document.getElementById('demo').innerHTML = ("Loose !");
               ++scoreai; document.getElementById('scoreai').innerHTML = scoreai;
           } else if (i == arr[2]) {
                document.getElementById('ai').setAttribute("src", "scissors.png");
+              document.getElementById('ai').setAttribute("alt", "scissors");
               document.getElementById('user').setAttribute("src", "stone.png");
+              document.getElementById('user').setAttribute("alt", "stone");
               document.getElementById('demo').innerHTML = ("Win !");
              ++scorep; document.getElementById('scorep').innerHTML = scorep;
           }
@@ -90,16 +96,22 @@
           var i = arr[Math.floor(Math.random() * arr.length)];
           if (i == arr[1]) {
               document.getElementById('ai').setAttribute ("src", "paper.png");
+              document.getElementById('ai').setAttribute("alt", "paper");
               document.getElementById('user').setAttribute("src", "paper.png");
+              document.getElementById('user').setAttribute("alt", "paper");
               document.getElementById('demo').innerHTML = ("Tie !");
           } else if (i == arr[2]) {
               document.getElementById('ai').setAttribute("src", "scissors.png");
+              document.getElementById('ai').setAttribute("alt", "scissors");
               document.getElementById('user').setAttribute("src", "paper.png");
+              document.getElementById('user').setAttribute("alt", "paper");
               document.getElementById('demo').innerHTML = ("Loose !");
               ++scoreai; document.getElementById('scoreai').innerHTML = scoreai;
           } else if (i == arr[0]) {
               document.getElementById('ai').setAttribute("src", "stone.png");
+              document.getElementById('ai').setAttribute("alt", "stone");
               document.getElementById('user').setAttribute("src", "paper.png");
+              document.getElementById('user').setAttribute("alt", "paper");
               document.getElementById('demo').innerHTML = ("Win !");
              ++scorep; document.getElementById('scorep').innerHTML = scorep;
           }
@@ -112,16 +124,22 @@
           var i = arr[Math.floor(Math.random() * arr.length)];
           if (i == arr[2]) {
               document.getElementById('ai').setAttribute("src", "scissors.png");
+              document.getElementById('ai').setAttribute("alt", "scissors");
               document.getElementById('user').setAttribute("src", "scissors.png");
+              document.getElementById('user').setAttribute("alt", "scissors");
               document.getElementById('demo').innerHTML = ("Tie !");
           } else if (i == arr[0]) {
               document.getElementById('ai').setAttribute("src", "stone.png");
+              document.getElementById('ai').setAttribute("alt", "stone");
               document.getElementById('user').setAttribute("src", "scissors.png");
+              document.getElementById('user').setAttribute("alt", "scissors");
               document.getElementById('demo').innerHTML = ("Loose !");
               ++scoreai; document.getElementById('scoreai').innerHTML = scoreai;
           } else if (i == arr[1]) {
               document.getElementById('ai').setAttribute("src", "paper.png");
+              document.getElementById('ai').setAttribute("alt", "paper");
               document.getElementById('user').setAttribute("src", "scissors.png");
+              document.getElementById('user').setAttribute("alt", "scissors");
               document.getElementById('demo').innerHTML = ("Win !");
              ++scorep; document.getElementById('scorep').innerHTML = scorep;
           }
