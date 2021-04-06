@@ -8,6 +8,17 @@ body{
     background-image: url("back1.png");
     background-size: auto;
 }
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.ulu {
+    overflow: hidden;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
 h1 {
     color: white;
     display: block;
@@ -16,8 +27,22 @@ h1 {
     font-family: 'jaldi';
     margin: 0px;
     font-size: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    float: left;
+    margin-left: 20px;
+}
+.rien {
+    padding: 0px;
+    float: right;
+    margin-right: 20px;
+    display: block;
+    margin-top: 15px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.5s, transform 0.5s;
+}
+.rien:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
 }
 h2 {
     color: black;
@@ -98,6 +123,10 @@ ul {
     body {
         background-size: auto;
     }
+    h1 {
+        float: none;
+        margin-left: 0px;
+    }
     h2 {
         font-size: 40px;
         margin-top: 25px;
@@ -123,5 +152,8 @@ ul {
         width: 100px;
         margin-right: 0px;
         margin-top: 50px;
+    }
+    .rien {
+        display: none;
     }
 }
