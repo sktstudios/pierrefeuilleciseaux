@@ -116,6 +116,9 @@ ul {
 .pierre:hover, .feuille:hover, .ciseaux:hover {
     transform: scale(1.1);
 }
+.pierre:focus, .feuille:focus, .ciseaux:focus {
+    outline: 0;
+}
 .ciseaux {
     margin-right: 0px;
 }
