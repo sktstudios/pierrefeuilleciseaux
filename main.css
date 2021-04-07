@@ -38,7 +38,7 @@ h1 {
     margin-top: 15px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: filter 0.5s, transform 0.5s;
+    transition: filter 0.32s, transform 0.32s;
 }
 .rien:hover {
     transform: scale(1.1);
@@ -152,6 +152,9 @@ ul {
         width: 100px;
         margin-right: 0px;
         margin-top: 50px;
+    }
+    .pierre, .feuille {
+        margin-right: 20px;
     }
     .rien {
         display: none;
