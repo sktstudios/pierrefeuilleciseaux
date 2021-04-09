@@ -49,7 +49,7 @@
                     <span id="scorep">0</span>
                 </div>
                 <div class="show">
-                    <img id="user" src="" alt="" >
+                    <img class="imguser" id="user" src="" alt="" >
                 </div>
             </div>
             <div class="section">
@@ -59,18 +59,18 @@
                     <span id="scoreai">0</span></div>
         
                 <div class="show">
-                    <img id="ai" src="" alt="" >
+                    <img class="imgai"id="ai" src="" alt="" >
                 </div>
             </div>
         </div>
         <ul>
             <li>
             
-                <input type="image" id="pierre" onclick="fun1()" class="pierre" src="stone.png" alt="stone" >
+                <input type="image" id="pierre" onclick="fun1();change1();" class="pierre" src="stone.png" alt="stone" >
             
-                <input type="image" id="feuille" onclick="fun2()" class="feuille" src="paper.png" alt="paper" >
+                <input type="image" id="feuille" onclick="fun2();change1();" class="feuille" src="paper.png" alt="paper" >
             
-                <input type="image" id="ciseaux" onclick="fun3()" class="ciseaux" src="scissors.png" alt="scissors" >
+                <input type="image" id="ciseaux" onclick="fun3();change1();" class="ciseaux" src="scissors.png" alt="scissors" >
             </li>
         </ul>
     <script type="text/javascript" >
@@ -162,6 +162,24 @@
              ++scorep; document.getElementById('scorep').innerHTML = scorep;
           }
       }
+    </script>
+    <script type="text/javascript" >
+   function change1() { document.getElementById('user').animate([
+       { transform: 'scale(0)' },
+       { transform: 'scale(1)' }], {
+       duration: 230,
+   });
+   document.getElementById('ai').animate([
+       { transform: 'scale(0)' },
+       { transform: 'scale(1)' }], {
+       duration: 230,
+   });
+   document.getElementById('demo').animate([
+       { transform: 'scale(0.5)' },
+       { transform: 'scale(1)' }], {
+       duration: 230,
+   });
+                      }
     </script>
     </body>
 </html>
