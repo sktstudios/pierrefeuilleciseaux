@@ -46,7 +46,7 @@ h1 {
     filter: grayscale(0%);
 }
 h2 {
-    color: black;
+    color: white;
     display: block;
     width: 250px;
     text-align: center;
